@@ -1,0 +1,62 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+h1 {
+  font-size: 6rem;
+  color: #20CB7C;
+}
+body {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  width: 100%;
+  min-height: 100%;
+  background: #434544;
+  color: #E3A441;
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+.steps {
+  display: table;
+  table-layout: fixed;
+  clear: both;
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+.step {
+  display: table-cell;
+  text-align: center;
+}
+.step > img {
+  display: none;
+}
+.step.active > img {
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+.step svg{
+  fill: #E3A441;
+}
+.step.active {
+  fill: #20CB7C;
+  color: #20CB7C;
+}
+body > img {
+  height: auto;
+  width: 80%;
+}
+@media (min-width: 720px) {
+  body {
+    margin: 20px;
+    font-size: 1rem;
+  }
+  body > img {
+    height: 50%;
+    width: auto;
+  }
+}
